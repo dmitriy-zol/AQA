@@ -1,7 +1,7 @@
 from email_utils import create_email
 
-a = create_email("ivan", "test.com")
-print(a)
+def test_add_positive():
+    assert create_email("ivan", "test.com") == "ivan@test.com"
 
-b = create_email("user123", "mail.ru")
-print(b)
+def test_add_positive_numbers():
+    assert create_email("user123", "mail.ru") == "user123@mail.ru"
